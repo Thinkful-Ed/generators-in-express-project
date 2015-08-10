@@ -14,9 +14,7 @@ module.exports = {
          * @return     {void}
          */
         all: function (callback) {
-            setTimeout(function () {
-                callback(null, userIds);
-            }, 10);
+            callback(null, userIds);
         },
         /**
          * Returns user by index
@@ -26,13 +24,11 @@ module.exports = {
          * @return     {void}
          */
         find: function (id, callback) {
-            setTimeout(function () {
-                var user = users[id];
-                if (!user)
-                    callback(new Error("No user with id", id));
-                else
-                    callback(null, user);
-            }, 10);
+            var user = users[id];
+            if (!user)
+                callback(new Error("No user with id", id));
+            else
+                callback(null, user);
         }
     }
 }
