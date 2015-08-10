@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Thinkful-Ed/koa-generators-project#readme",
   "dependencies": {
+    "co": "^4.6.0",
     "express": "^4.13.3"
   }
 }
